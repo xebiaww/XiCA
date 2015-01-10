@@ -1,78 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="85.520671">
-<testcase classname="ClubRegistration" name="DataEntryValid" time="31.694757">
-<system-out><![CDATA[Given I want to open the browser............................................passed
-And I visit the https://tbbqabeta.productpartners.com url...................passed
-And I visit to the Signup Page..............................................passed
-When I click on the club signup.............................................passed
-Then i submit form with valid data and get welcome page.....................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="43.574288">
+<testcase classname="Signing into TBB portal" name="TBB Portal Sign In" time="43.574288">
+<system-out><![CDATA[Given I want to open the browser to sign into TBB portal....................passed
+And I visit the https://tbbqabeta.productpartners.com url for signin........passed
+And I click on the Signin link..............................................passed
+Then I should move to Login Page............................................passed
+And I provide userid credentails to do signin...............................passed
 ]]></system-out>
-</testcase>
-<testcase classname="ClubRegistration" name="DataEntryInValid" time="38.317709">
-<system-out><![CDATA[Given I want to open the browser............................................passed
-And I visit the https://tbbqabeta.productpartners.com url...................passed
-And I visit to the Signup Page..............................................passed
-When I click on the club signup.............................................passed
-Then i submit form with Invalid data and get error page.....................passed
-]]></system-out>
-</testcase>
-<testcase classname="ATG Redirection for Free Signup" name="Check ATG redirection" time="8.440034">
-<failure message="org.openqa.selenium.NoSuchWindowException: no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=39.0.2171.95)&#10;  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;Build info: version: '2.43.0', revision: 'accb3003b9fb8f7cae30f9669b4c594a065396a6', time: '2014-09-09 22:22:51'&#10;System info: host: 'RJINDAL', ip: '10.1.6.137', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'&#10;Session ID: a09adf690816aa75d2cf74222a54a673&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Ravi\AppData\Local\Temp\scoped_dir9168_20093}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:526)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:313)&#13;&#10;&#9;at com.seleniumtests.cucumbertest.java.FreeSignup_ATG_Redirection.i_visit_the_https_tbbqabeta_productpartners_com_url_for_free_signup(FreeSignup_ATG_Redirection.java:43)&#13;&#10;&#9;at ✽.And I visit the https://tbbqabeta.productpartners.com url for free signup(FreeSignup_ATG_Redirection.feature:6)&#13;&#10;"><![CDATA[Given I want to open the browser for free signup............................passed
-And I visit the https://tbbqabeta.productpartners.com url for free signup...failed
-And I visit to the Signup Page for free signup..............................skipped
-When I click on the free signup.............................................skipped
-Then i should redirect to ATG page..........................................undefined
-
-StackTrace:
-org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '2.43.0', revision: 'accb3003b9fb8f7cae30f9669b4c594a065396a6', time: '2014-09-09 22:22:51'
-System info: host: 'RJINDAL', ip: '10.1.6.137', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
-Session ID: a09adf690816aa75d2cf74222a54a673
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Ravi\AppData\Local\Temp\scoped_dir9168_20093}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:313)
-	at com.seleniumtests.cucumbertest.java.FreeSignup_ATG_Redirection.i_visit_the_https_tbbqabeta_productpartners_com_url_for_free_signup(FreeSignup_ATG_Redirection.java:43)
-	at ✽.And I visit the https://tbbqabeta.productpartners.com url for free signup(FreeSignup_ATG_Redirection.feature:6)
-]]></failure>
-</testcase>
-<testcase classname="Sign Out" name="TBB Portal Sign oufter signining in" time="7.068171">
-<failure message="org.openqa.selenium.NoSuchWindowException: no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=39.0.2171.95)&#10;  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 10 milliseconds&#10;Build info: version: '2.43.0', revision: 'accb3003b9fb8f7cae30f9669b4c594a065396a6', time: '2014-09-09 22:22:51'&#10;System info: host: 'RJINDAL', ip: '10.1.6.137', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'&#10;Session ID: 21296372c1f98d1bfb2b0ed06ff7eeae&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Ravi\AppData\Local\Temp\scoped_dir3796_29168}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:526)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:313)&#13;&#10;&#9;at com.seleniumtests.cucumbertest.java.SignOutSteps.i_have_signedin_to_the_TBB_portal(SignOutSteps.java:31)&#13;&#10;&#9;at ✽.Given I have signedin to the TBB portal(SignOut.feature:5)&#13;&#10;"><![CDATA[Given I have signedin to the TBB portal.....................................failed
-When I click on Sign out button.............................................skipped
-Then I should be logged out from the portal.................................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10 milliseconds
-Build info: version: '2.43.0', revision: 'accb3003b9fb8f7cae30f9669b4c594a065396a6', time: '2014-09-09 22:22:51'
-System info: host: 'RJINDAL', ip: '10.1.6.137', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
-Session ID: 21296372c1f98d1bfb2b0ed06ff7eeae
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Ravi\AppData\Local\Temp\scoped_dir3796_29168}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:313)
-	at com.seleniumtests.cucumbertest.java.SignOutSteps.i_have_signedin_to_the_TBB_portal(SignOutSteps.java:31)
-	at ✽.Given I have signedin to the TBB portal(SignOut.feature:5)
-]]></failure>
 </testcase>
 </testsuite>

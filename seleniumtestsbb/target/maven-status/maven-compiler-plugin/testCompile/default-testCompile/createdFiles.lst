@@ -1,4 +1,4 @@
-com\seleniumtests\cucumbertest\java\Hooks.class
 com\seleniumtests\cucumbertest\java\RunCukeBase.class
 com\seleniumtests\cucumbertest\java\RunCucumberTests.class
 com\seleniumtests\cucumbertest\java\ClubRegSteps.class
+com\seleniumtests\cucumbertest\java\Hooks.class
